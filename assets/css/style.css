@@ -227,26 +227,6 @@ header, .blurheader {
 	font-weight: normal;
 }
 
-/*.lightweight img {
-	width: 82px;
-	height: 53px;
-}
-
-.modular img {
-	width: 90px;
-	height: 90px;
-}
-
-.composer img {
-	width: 95px;
-	height: 125px;
-}
-
-.opensource img {
-	width: 80px;
-	height: 76px;
-}*/
-
 /* Extensions */
 
 #extensions {
@@ -319,11 +299,11 @@ header, .blurheader {
 }
 
 .team h2 {
-	margin: 0px;
-	padding: 20px 0px;
-	font-size: 28px;
-	color: #fff;
-	font-weight: normal;
+	color: #FFFFFF;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 20px;
+    padding: 20px 0;
 }
 
 #developers {
@@ -381,7 +361,7 @@ header, .blurheader {
 	position: absolute;
     z-index: 5;
     box-shadow: 0 2px 2px #111;
-    height: 105px;
+    height: 100px;
 }
 
 .arrow {
