@@ -1,7 +1,7 @@
 name = Reborn
-description = Default template of RebornCMS with Bootstrap 3.0
+description = Official RebornCMS Website Theme, designed by Li Jia Li.
 author = Reborn Development Team
-website = http://www.reborncms.com
+website = http://reborncms.com
 version = 1.0
 min-require = 2.0
 widget_areas = [sidebar : Sidebar Area]

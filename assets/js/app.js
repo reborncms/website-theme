@@ -7,7 +7,10 @@ $(function() {
         }, 1000, 'easeOutQuart');        
     });
 
-    // Credit to http://abduzeedo.com
+    /*
+    	iOS7 Frosted Glass style scrollbar effect
+    	Credit to abduzeedo.com 
+    */
 
 	html2canvas($("body"), { 
 		onrendered: function(canvas) {
