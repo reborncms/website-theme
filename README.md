@@ -1,4 +1,4 @@
-website-theme
+RebornCMS Website
 =============
 
-RebornCMS theme for official website.
+This repository is with codes for RebornCMS website theme.
