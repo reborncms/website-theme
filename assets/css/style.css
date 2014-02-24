@@ -3,7 +3,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 1.8em;
-	padding-top: 120px;
+	padding-top: 101px;
 }
 
 .clearfix {
@@ -19,6 +19,14 @@ body {
 
 .clearfix:after {
   clear: both;
+}
+
+.style-title {
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.style-text {
+	font-family: 'Abel', sans-serif;
 }
 
 a {
@@ -65,10 +73,12 @@ div.logo-wrapper {
 
 #logo {
 	background: url(../img/logo.png) no-repeat left top transparent;
-	padding-top: 30px;
-	padding-left: 105px;
-	height: 66px;
+	padding-top: 16px;
+	padding-left: 88px;
+	height: 50px;
     margin: 20px 0 0;
+    color:#fff;
+    font-size: 22px;
 }
 
 #logo a {	
@@ -89,7 +99,7 @@ div.logo-wrapper {
 header, .blurheader {
 	background: rgba(0,0,0,.6);	
 	position: fixed;
-	height: 120px;
+	height: 101px;
 	width: 100%;
 	top: 0;
 	z-index: 10;
@@ -131,9 +141,9 @@ header, .blurheader {
 
 .nav ul li a {
 	display: block;
-	font-size: 15px;
+	font-size: 20px;
 	color: #fff;
-	padding: 47px 31px;
+	padding: 30px 25px;
 }
 
 .nav ul li.active a,
@@ -146,8 +156,8 @@ header, .blurheader {
 /* Home */
 
 #home {
-	background-image: url(../img/bg-feature.jpg);
-	background-position: bottom right;
+	background-image: url(../img/bg.jpg);
+	background-position: top right;
 	background-size: cover;
 	padding: 20px 0;
 }
@@ -158,7 +168,7 @@ header, .blurheader {
 
 .download h2 {
 	margin: 0px;	
-	font-size: 24px;
+	font-size: 30px;
 	padding: 20px 0;
 	color: #fff;
 	font-weight: normal;
@@ -181,6 +191,21 @@ header, .blurheader {
 
 .download .btn-download i {
     padding: 0 20px 0 0;
+}
+
+#slider_wrapper {
+	width:600px;
+	height:360px;
+	margin: 20px auto;
+	background: url('../img/macbook.png') center no-repeat;
+}
+
+#slides {
+	width:345px;
+	height:216px;
+	margin:0 auto;
+	position: relative;
+	top: 69px;
 }
 
 /* Description */
@@ -223,7 +248,7 @@ header, .blurheader {
 
 .information ul li h3 {
 	color: #fff;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: normal;
 }
 
@@ -335,7 +360,7 @@ header, .blurheader {
 
 #nlh .info, #nlh .info p { background-color: #8f0013; }
 #ljl .info, #ljl .info p { background-color: #00731e; }
-#k .info, #k .info p { background-color: #1b1b1b; }
+#k .info, #k .info p { background-color: #535353; }
 #yn .info, #yn .info p { background-color: #aa6800; }
 #tpo .info, #tpo .info p { background-color: #007ca4; }
 
@@ -345,6 +370,8 @@ header, .blurheader {
     width: 320px;
     position: relative;    
     height: 156px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .info h3 {
@@ -352,6 +379,7 @@ header, .blurheader {
 	padding: 10px;
 	font-size: 18px;
 	color: #f8f8f8;
+	font-weight: normal;
 }
 
 .info p {	
@@ -359,26 +387,24 @@ header, .blurheader {
 	padding: 0px 10px 10px 10px;
 	margin: 0px;
 	position: absolute;
-    z-index: 5;
-    box-shadow: 0 2px 2px #111;
     height: 100px;
 }
 
 .arrow {
 	width: 0; 
 	height: 0; 
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
 	position: absolute;
-	left: -30px;
-	top: 50px;
+	left: -25px;
+	top: 33px;
 }
 
-#nlh .arrow { border-right: 30px solid #8f0013; }
-#ljl .arrow { border-right: 30px solid #00731e; }
-#k .arrow { border-right: 30px solid #1b1b1b; }
-#yn .arrow { border-right: 30px solid #aa6800; }
-#tpo .arrow { border-right: 30px solid #007ca4; }
+#nlh .arrow { border-right: 25px solid #8f0013; }
+#ljl .arrow { border-right: 25px solid #00731e; }
+#k .arrow { border-right: 25px solid #535353; }
+#yn .arrow { border-right: 25px solid #aa6800; }
+#tpo .arrow { border-right: 25px solid #007ca4; }
 
 .info .role {
 	position: absolute;
@@ -387,23 +413,27 @@ header, .blurheader {
 	padding: 5px 10px;
 	color: #f8f8f8;
 	background-color: rgba(0, 0, 0, 0.4);	
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .team-social {
 	position: absolute;
-	right: -1px;
-	bottom: -34px;
+	right: 30px;
+	bottom: 37px;
 }
 
 .team-social li {
 	float: left;
 	display: inline-block;
 	width: 45px;
-	height: 37px;
+	height: 40px;
 	margin-left: 10px;
-	box-shadow: -4px 4px 0px #2b2828;
+	box-shadow: -4px 4px 0px #7a7a7a;
 	text-align: center;
+}
+
+.team-social li:hover {
+	box-shadow: -4px 4px 0px #2b2828;
 }
 
 .fb { background-color: #3b5999; }
@@ -415,6 +445,7 @@ header, .blurheader {
     display: block;
     font-size: 24px;
     margin-top: 5px;
+    padding-top: 3px;
 }
 
 .gh a {
@@ -433,7 +464,7 @@ header, .blurheader {
 	background-color: #000;
 	border: 1px solid #efefef;
 	color: #fff;	
-	font-size: 16px;
+	font-size: 18px;
 	padding: 10px 20px;
 	top: -43px;
 	left: 20px;
@@ -459,7 +490,7 @@ header, .blurheader {
 .contributor ul li h4 {
 	margin: 10px 0px 20px 0;
 	color: #fff;
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: normal;
 }
 
