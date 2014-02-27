@@ -49,21 +49,17 @@ hr {
 /* Header */
 
 header {
-	/*background-color: #070706;
-	height: 120px;
-	position: fixed;
 	width: 100%;
+	height: 100px;
 	top: 0px;
-	z-index: 10;*/
-}
-
-.glass {
-	-webkit-filter: blur(2px);
-	-moz-filter   : blur(2px);
-	-ms-filter    : blur(2px);
-	-o-filter     : blur(2px);
-	filter        : blur(2px);
-	opacity: 0.3;
+	position:fixed;
+	box-shadow:rgba(0,0,0,0.05) 0 1px 2px,rgba(0,0,0,0.5) 0 -1px 0 inset;
+	-webkit-transition:all 0.15s ease-out 0;
+	-moz-transition:all 0.15s ease-out 0;
+	transition:all 0.15s ease-out 0;
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#000),color-stop(25%,#000),color-stop(100%,rgba(0,0,0,0.83)));
+	background:linear,to bottom,#000 0%,#000 25%,rgba(0,0,0,0.83) 100%;
+	z-index: 777;
 }
 
 div.logo-wrapper {
@@ -85,40 +81,6 @@ div.logo-wrapper {
 	color: #fff;
 	font-family: "Century Gothic", sans-serif;
 	font-weight: normal;
-}
-
-/* Blur */
-
-#header {
-	position: relative;
-	display: block;
-	margin: 0 auto;
-	background: #fff;
-}
-
-header, .blurheader {
-	background: rgba(0,0,0,.6);	
-	position: fixed;
-	height: 101px;
-	width: 100%;
-	top: 0;
-	z-index: 10;
-}
-
-.blurheader {
-	background: transparent;
-	overflow: hidden;
-	z-index: 9;
-	background: #000;
-	left: 0;
-}
-
-#canvas {
-	opacity:1;
-  	z-index: 9;
-  	position: absolute;
-  	display: block;
-  	top: 3px;
 }
 
 /* Header Navigation */
