@@ -43,22 +43,22 @@ hr {
 
 .wrapper {	
 	margin: 0 auto;
-	width: 960px;	
+	width: 80%;	
 }
 
 /* Header */
 
 header {
 	width: 100%;
-	height: 100px;
+	height: auto;
 	top: 0px;
 	position:fixed;
-	box-shadow:rgba(0,0,0,0.05) 0 1px 2px,rgba(0,0,0,0.5) 0 -1px 0 inset;
 	-webkit-transition:all 0.15s ease-out 0;
 	-moz-transition:all 0.15s ease-out 0;
 	transition:all 0.15s ease-out 0;
-	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#000),color-stop(25%,#000),color-stop(100%,rgba(0,0,0,0.83)));
-	background:linear,to bottom,#000 0%,#000 25%,rgba(0,0,0,0.83) 100%;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#000),color-stop(25%,#000),color-stop(100%,rgba(0,0,0,0.83)));
+	background: linear,to bottom,#000 0%,#000 25%,rgba(0,0,0,0.83) 100%;
+	background: -moz-linear-gradient(#000, rgba(0,0,0,0.83));
 	z-index: 777;
 }
 
@@ -110,7 +110,7 @@ div.logo-wrapper {
 
 .nav ul li.active a,
 .nav ul li a:hover {
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(30, 30, 30, 0.3);
 	border-bottom: 5px solid #7b0000;
 	padding-bottom: 43px;
 }
@@ -159,7 +159,7 @@ div.logo-wrapper {
 	width:600px;
 	height:360px;
 	margin: 20px auto;
-	background: url('../img/macbook.png') center no-repeat;
+	background-image: url('../img/macbook.png');
 }
 
 #slides {
@@ -509,4 +509,98 @@ div.logo-wrapper {
 footer {
 	color: #fff;
 	text-align: center;
+}
+
+/* Toggler */
+
+header .wrapper {
+	position: relative;
+}
+
+#toggler { 
+	display: none;
+	font-size: 0px;
+	text-indent: -9999px;
+}
+
+@media screen and (max-width : 768px)  {
+
+	.wrapper {
+		width: 90%;
+	}
+
+	div.logo-wrapper, .nav {
+		float: none;	
+		margin-bottom: 20px;	
+	}
+
+	.nav ul {
+		display: none;
+		padding: 0px;
+	}
+
+	.nav ul li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+
+	.nav ul li a {
+		font-size: 14px;
+		border-bottom: 5px solid transparent;
+	}
+
+	.nav ul li a, .nav ul li.active a, .nav ul li a:hover {
+		padding: 10px;
+	}
+
+	#toggler {
+		position: fixed;
+		display: block;
+		right: 5%;
+		top: 41px;
+	}
+
+	#toggler:after {
+		content:"";
+		background: url('../img/toggler.png') no-repeat center center rgba(20,20,20,0.6);
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		padding: 5px;
+		position: absolute;
+		right: 10px;
+	}
+
+	.download h2 {
+		font-size: 23px;
+		line-height: 1.5em;
+	}
+
+	.download .btn-download {
+		font-size: 18px;
+		padding: 10px 0px;
+	}
+
+	.information ul li {
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width : 600px) {
+	#slider_wrapper { display: none; }
+}
+
+@media screen and (max-width : 520px) {
+	#about { display: none; }
+}
+
+@media screen and (max-width : 320px) {
+	.information ul li {
+		width: 100%;
+	}
+	#logo a {
+		font-size: 20px;
+	}
 }
