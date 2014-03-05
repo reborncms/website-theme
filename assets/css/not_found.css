@@ -1,8 +1,6 @@
 body {
 	color: #e2e2e2;
 	background-color: #2e2e2e;
-	/*background:url('../img/big_logo.png') no-repeat #2e2e2e;*/
-	overflow:hidden;
 }
 
 a {
@@ -21,10 +19,13 @@ a {
 }
 
 .logo {
-	width:200px;
-	margin:0 auto;
+	width: 200px;
+	margin: 0 auto;
 	height: 65px;
-	padding:24px 0px 0px 65px;
+	padding: 20px 0px 0px 79px;
+	font-family: "Yanone Kaffeesatz",sans-serif;
+	text-align: left;
+	font-size: 37px;
 }
 
 #message {
@@ -33,20 +34,23 @@ a {
 
 .not_found_nav {
 	list-style: none;
-	margin:150px auto;
+	margin:100px auto;
 }
 
 .not_found_nav li {
 	display: inline-block;
 	margin-left: 30px;
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
 }
 
 #message {
 	font-size: 30px;
+	font-family: 'Shadows Into Light', cursive;
 }
 
 .not_found_nav li a, #message a {
-	color: #D63131;;
+	color: #D63131;
 }
 
 .not_found_nav li a:hover, #message a:hover {
