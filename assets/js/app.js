@@ -1,10 +1,10 @@
 $(function() {	
-    $('.nav ul li a').bind('click',function(event){    	
+    $('.home-nav li a').bind('click',function(event){    	
     	event.preventDefault();
         var $anchor = $(this);
 
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 119,
+            scrollTop: $($anchor.attr('href')).offset().top - 101,
         }, 1000, 'easeOutQuart');        
     });
 

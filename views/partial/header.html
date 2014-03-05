@@ -7,11 +7,18 @@
 			</h1>
 		</div>
 
-		<nav class="nav style-text">
-			<ul>
-				<li class="active"><a href="#home">Home</a></li>				
+		<nav class="nav style-text">			
+			{{ if (is_home()) }}
+			<ul class="home-nav">			
+				<li class="active"><a href="#home">Home</a></li>							
 				<li><a href="#about">About</a></li>
 			</ul>
+			{{ else }}
+			<ul>
+				<li><a href="{{ url() }}">Home</a></li>				
+				<li><a href={{ url('about') }}>About</a></li>
+			</ul>
+			{{ endif }}			
 		</nav>
 		<a href="#" id="toggler">Menu</a>
 

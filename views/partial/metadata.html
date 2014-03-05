@@ -1,13 +1,15 @@
 <meta name="robots" content="INDEX,FOLLOW" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{{ $metadata }}
+
 <title>{{ $layoutTitle }} | {{ setting('site_title') }}</title>
 
 {{ Html::favicon() }}
 
-{{ $metadata }}
-
-<link href='http://fonts.googleapis.com/css?family=Abel|Shadows+Into+Light|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Abel|Shadows+Into+Light|Open+Sans:300|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+{{ $headerStyle }}
 
 {{ css(array(
 	'normalize.css',
