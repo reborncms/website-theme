@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Reborn Development Team" />
+		<title>{{ setting('site_title') }} | Page Not Found</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="{{ assetPath('img') }}favicon.ico">
+
+		{{ css("not_found.css") }}
+	</head>
+	<body>
+		<div class="not_found_wrapper">
+			<a href="{{ url() }}"><h1 class="logo">RebornCMS</h1></a>
+			<div id="message">
+				<h2>Invalid URL !!!</h2>
+				<h1>Go <a href="{{ url() }}">Home</a>. You are drunk !!!</h1>
+			</div>
+			<ul class="not_found_nav">
+				<li><a href="{{ url() }}">Home</a></li>
+				<li><a href="{{ url('blog') }}">Blog</a></li>
+				<li><a href="#">Documentation</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
