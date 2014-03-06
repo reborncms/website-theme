@@ -49,6 +49,16 @@ hr {
 	border-bottom: 1px solid #fff;
 }
 
+::-moz-selection {
+       background-color: #7b0000;
+       color: #fff;
+}
+
+::selection {
+       background-color: #7b0000;
+       color: #fff;
+}
+
 .wrapper {	
 	margin: 0 auto;
 	width: 80%;	
@@ -75,11 +85,7 @@ div.logo-wrapper {
 	float: left;
 }
 
-#logo {
-	background: url(../img/logo.png) no-repeat left top transparent;
-	padding-top: 16px;
-	padding-left: 88px;
-	height: 50px;
+#logo {	
     margin: 20px 0 0;
     color:#fff;
     font-size: 22px;
@@ -90,6 +96,11 @@ div.logo-wrapper {
 	font-family: "Yanone Kaffeesatz", sans-serif;
 	font-weight: normal;
 	font-size: 30px;
+	background: url(../img/logo.png) no-repeat left top transparent;
+	padding: 20px 0px 0px 79px;
+	display: block;
+	height: 65px;
+	width: 200px
 }
 
 /* Header Navigation */
@@ -114,13 +125,12 @@ div.logo-wrapper {
 	display: block;
 	font-size: 17px;
 	color: #fff;	
-	padding: 43px 25px 30px 25px;	
+	padding: 43px 25px 34px 25px;	
 }
 
 .nav ul li.active a,
 .nav ul li a:hover {
 	background-color: rgba(30, 30, 30, 0.3);
-	padding-bottom: 30px;
 	border-bottom: 5px solid #7b0000;
 }
 
@@ -643,6 +653,10 @@ pre {
 	color: #eee;
 }
 
+.children {
+	border-left: 3px solid rgba(123, 0, 0, 0.67);
+}
+
 .field_wrapper {
 	margin-bottom: 20px;
 }
@@ -678,7 +692,7 @@ pre {
 	min-height: 150px;
 }
 
-#comment_submit {
+#comment_submit, .contact-btn.btn {
 	display: inline-block;
 	margin-bottom: 0;
 	font-weight: 400;
@@ -700,13 +714,12 @@ pre {
 	background-color: #7b0000;	
 }
 
-#comment_submit:focus:hover, .comment_submit:focus {
+#comment_submit:focus:hover, #comment_submit:focus, .contact-btn.btn:hover {
 	color: #fff;
-	background-color: #3276b1;
-	border-color: #285e8e;
+	background-color: #FF3C3C;
 }
 
-.form_label label {
+.form_label label, .contact-form-block label {
 	font-size: 14px;
 	margin-bottom: 10px;
 	display: block;
@@ -823,6 +836,7 @@ pre {
 	padding: 10px;
 	margin-bottom: 20px;
 	border-radius: 5px;
+	color: #eee;
 }
 
 .widget-title {
@@ -835,6 +849,45 @@ pre {
 .widget ul, .widget ol {
 	padding-left: 5px;
 	list-style: none;
+}
+
+/* Contact */
+
+.contact-form input[type=text], 
+.contact-form input[type=email],
+.contact-form textarea {
+	display: block;
+	width: 60%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	margin-bottom: 20px;
+}
+
+.contact-form textarea {
+	width: 80%;
+	min-height: 150px;
+}
+
+.contact-form input[type=file] {
+	margin-bottom: 20px;
+	color: #eee;
+}
+
+.contact-form label {
+	color: #eee;
+	font-size: 14px;
+	margin-bottom: 10px;
 }
 
 

@@ -6,10 +6,9 @@ body {
 a {
 	color:#fff;
 	text-decoration: none;
-}
-
-.logo {
-	background: url('../img/logo.png') center left no-repeat;
+	-webkit-transition:all 0.15s ease-out 0;
+	-moz-transition:all 0.15s ease-out 0;
+	transition:all 0.15s ease-out 0;
 }
 
 .not_found_wrapper {
@@ -21,11 +20,18 @@ a {
 .logo {
 	width: 200px;
 	margin: 0 auto;
-	height: 65px;
-	padding: 20px 0px 0px 79px;
+	height: 65px;	
 	font-family: "Yanone Kaffeesatz",sans-serif;
 	text-align: left;
 	font-size: 37px;
+}
+
+.logo a {
+	background: url('../img/logo.png') center left no-repeat;
+	padding: 20px 0px 0px 79px;
+	height: 65px;
+	width: 200px;
+	display: block;
 }
 
 #message {
