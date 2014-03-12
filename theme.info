@@ -1,7 +1,7 @@
 name = RebornCMS
-description = Official RebornCMS Website Theme, designed by Li Jia Li.
+description = Official RebornCMS Website Theme, with Bootstrap.
 author = Reborn Development Team
 website = http://reborncms.com
-version = 1.0
+version = 1.1
 min-require = 2.0
 widget_areas = [sidebar : Sidebar Area]

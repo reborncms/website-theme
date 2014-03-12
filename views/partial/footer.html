@@ -1,40 +1,29 @@
-<section id="ft-navigation">
-	<div class="wrapper">
-		
-		<div class="links clearfix">
+	<section id="footer">
+		<footer>
+			<div class="container">
+				<p class="col-md-6">Copyright &copy; {{ setting('site_title') }}. All Rights Reserved.</p>
+				<span class="pull-right socials">
+					<a href="https://www.facebook.com/reborncms" target="_blank" class="ico ico-facebook">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+					<a href="http://twitter.com/reborncms" target="_blank" class="ico ico-twitter">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="https://github.com/reborncms" target="_blank" class="ico ico-github">
+						<i class="fa fa-github-alt"></i>
+					</a>
+				</span>
+			</div>			
+		</footer>
+	</section> <!-- end of section#footer -->
 
-			<ul class="social-links">
-				<li><a href="https://www.facebook.com/reborncms" target="_blank">
-					<i class="fa fa-facebook-square"></i>
-				</a></li>
-				<li><a href="http://twitter.com/reborncms" target="_blank">
-					<i class="fa fa-twitter"></i>
-				</a></li>
-				<li><a href="https://github.com/reborncms" target="_blank">
-					<i class="fa fa-github-alt"></i>
-				</a></li>
-			</ul>
-		</div>
+	<!-- Scripts -->
 
-	</div>
-</section>
+	{{ jquery() }}
 
-<footer>
-	<div class="wrapper">
-		
-		<p>
-			Copyright &copy; {{ setting('site_title') }}. All Rights Reserved.
-		</p>
+	{{ js(array(
+		'bootstrap.js'
+	)) }}
 
-	</div>
-</footer>
-
-<!-- Scripts -->
-
-{{ jquery() }}
-
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-{{ js(array(
-	'app.js'
-)) }}
+</body>
+</html>
